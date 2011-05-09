@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" >
+    <RadioGroup android:id="@+id/rdbGp1"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        >               
+        <RadioButton android:id="@+id/rdb1"
+        	android:checked="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:text="Helt pris"
+            android:onClick="setReducedFalse"
+            />
+        <RadioButton android:id="@+id/rdb2"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"        
+            android:text="Reducerat pris"
+            android:onClick="setReducedTrue"
+            />   
+    </RadioGroup>
+    
+    <RadioGroup android:id="@+id/rdbGp1" 
+    	android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        
+    <RadioButton android:id="@+id/A"
+     android:checked="true"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="Trollhättan/Vänersborg" />
+	 
+	 <RadioButton android:id="@+id/D"
+	 android:checked = "true"
+	 android:layout_below="@id/A"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="Uppsala" />
+	 
+	 <RadioButton android:id="@+id/E"
+	 android:layout_below="@id/A"
+	 android:layout_toRightOf="@id/D"
+	 android:layout_marginLeft="50dp"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="Örebro" />
+	 
+	 <RadioButton android:id="@+id/F"
+	 android:layout_below="@id/E"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="Uddevalla" />
+	 
+	 <RadioButton android:id="@+id/G"
+	 android:layout_below="@id/E"
+	 android:layout_toRightOf="@id/F"
+	 android:layout_marginLeft="40dp"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="Stenungsund" />
+    </RadioGroup>
+    
+    <Button 
+    	android:id="@+id/btn"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/G"
+    	android:layout_marginTop="20dp"
+    	android:onClick="onGoButtonRest"
+    	android:text="Generera biljett"
+    />
+    
+    <TextView 
+     android:layout_below="@id/btn"
+	 android:layout_width="fill_parent"
+	 android:layout_height="wrap_content"
+	 android:text="Tryck på sms:et tre gånger för att skapa ett nytt" />
+	 
+	 <ImageView
+	  android:id="@+id/btmImg"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentBottom="true"
+	  android:onClick="onAdPressed"
+	  />
+ 
+</RelativeLayout>
+

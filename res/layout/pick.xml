@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/firspick"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" > 
+	   	
+    <ImageView
+    	android:src="@+drawable/stockholm"
+    	android:id="@+id/sthlm"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_marginTop="15dp"
+    	android:onClick="onPickStockholm"
+    />
+    <ImageView
+    	android:src="@+drawable/goteborg"
+    	android:id="@+id/gbg"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/sthlm"
+    	android:layout_marginTop="15dp"
+    	android:onClick="onPickGBG"
+    />
+    <ImageView
+    	android:src="@+drawable/rest"
+    	android:id="@+id/rest"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/gbg"
+    	android:layout_marginTop="15dp"
+    	android:onClick="onPickRest"
+    />
+    <ImageView
+    	android:src="@+drawable/senaste"
+    	android:id="@+id/latest"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/rest"
+    	android:layout_marginTop="15dp"
+    	android:onClick="onPickLatest"
+    />
+	 
+	 <ImageView
+	  android:id="@+id/btmImg"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentBottom="true"
+	  android:onClick="onAdPressed"
+	  />
+ 
+</RelativeLayout>
+

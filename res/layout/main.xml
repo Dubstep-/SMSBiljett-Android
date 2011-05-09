@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" >
+    
+    <!--!!!!!  CONTACT / PHONE NUMBER !!!!! -->
+	<TextView
+		android:id="@+id/sender_number"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingLeft="80dp"
+		android:paddingTop="26dp"
+		android:textSize="18dp"
+		android:textColor="#FFF"
+		android:scaleType="fitEnd"
+		android:background="@drawable/contactbox" />
+	
+	<!--!!!!!  TEXTBODY !!!!! -->
+	<TextView   
+		android:id="@+id/main_text"
+		android:layout_width="fill_parent"
+		android:layout_height="170dp"
+		android:layout_marginTop="7dp"
+		android:layout_marginLeft="6dp"
+		android:layout_marginRight="10dp"
+		android:textSize="18dp"
+		android:textColor="#000" 
+		android:layout_below="@id/sender_number"
+		android:background="@drawable/chatbox"
+		android:onClick="bodypress" />
+	
+	<!--!!!!!  MINI DATE !!!!! -->
+	<TextView   
+		android:id="@+id/date_text"
+		android:layout_width="fill_parent"
+		android:layout_height="85dp"
+		android:layout_marginRight="25dp"
+		android:layout_marginBottom="10dp"
+		android:layout_gravity="bottom|right" 
+		android:gravity="bottom|right"
+		android:textSize="15dp"
+		android:textColor="#000" 
+		android:layout_alignBottom="@id/main_text"/>
+	
+	<!--!!!!!  BOTTOM INPUT BOX !!!!! 
+	<ImageView
+		android:src="@drawable/inputbox"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitStart" /> -->
+    <TextView
+		android:background="@drawable/inputbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="17dp"
+        android:paddingLeft="10dp"
+        android:text="Type to compose"
+        android:textColor="#666"
+        android:textSize="16dp"
+        android:scaleType="fitStart" />
+ 
+</RelativeLayout>
+

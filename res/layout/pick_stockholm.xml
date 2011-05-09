@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" >
+    <RadioGroup android:id="@+id/rdbGp1"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        >               
+        <RadioButton android:id="@+id/rdb1"
+        	android:checked="true"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:text="Helt pris"
+            android:onClick="setReducedFalse"
+            />
+        <RadioButton android:id="@+id/rdb2"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"        
+            android:text="Reducerat pris"
+            android:onClick="setReducedTrue"
+            />   
+    </RadioGroup>
+    
+    <CheckBox android:id="@+id/A"
+     android:layout_below="@id/rdbGp1"
+     android:checked="true"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="A" />
+	<CheckBox android:id="@+id/B"
+	 android:layout_below="@id/A"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="B" />
+	<CheckBox android:id="@+id/C"
+	 android:layout_below="@id/B"
+	 android:layout_width="wrap_content"
+	 android:layout_height="wrap_content" android:text="C" />
+    	
+    <Button 
+    	android:id="@+id/btn"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:layout_below="@id/C"
+    	android:layout_marginTop="20dp"
+    	android:onClick="onGoButton"
+    	android:text="Generera biljett"
+    />
+    
+    <TextView 
+     android:layout_below="@id/btn"
+	 android:layout_width="fill_parent"
+	 android:layout_height="wrap_content"
+	 android:text="Om du använder Sony Ericsson finns det en chans att du inte automatiskt tas till din inbox, tills vidare får du manövrera dit manuellt" />
+	 
+	 <ImageView
+	  android:id="@+id/btmImg"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_alignParentBottom="true"
+	  android:onClick="onAdPressed"
+	  />
+ 
+</RelativeLayout>
+
