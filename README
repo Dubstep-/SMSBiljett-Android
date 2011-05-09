@@ -1,0 +1,9 @@
+git/apps/smsbiljett/main.java is point of entry
+
+See main.java on how to use info.txt
+
+Tickets are stored in /tickets, and they all extend the Ticket base class, use other tickets as reference
+
+Do not upload info.txt without proper formatting, will cause crash (dont fix that, being able to crash clients may come in handy)
+
+Code is built like lego, bit by bit, so it's in really bad shape
